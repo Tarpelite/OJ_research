@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	long long m,n,i,j,a,b,c;
+	scanf("%lld%lld",&m,&n);
+	i=1;
+	a=i;
+	while(i<m)
+	{
+		i++;
+		a=a*i;
+	}
+	i=1;
+	b=1;
+	while(i<n)
+	{
+		i++;
+		b=b*i;
+	}
+	i=1;
+	c=1;
+	while(i<(m-n))
+	{
+		i++;
+		c=c*i;
+	}
+	b=b*c;
+	printf("%lld",a/b);
+}

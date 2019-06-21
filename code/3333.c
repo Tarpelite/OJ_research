@@ -1,0 +1,16 @@
+#include<stdio.h>
+int comb_num(int,int);
+int main()
+{
+	int m,n;
+	scanf("%d%d",&m,&n);
+	printf("%d",comb_num(m,n));
+	return 0;
+		
+}
+int comb_num(int m,int n)
+{
+	if(n==1) return m;
+	if(n==m) return 1;
+	else return comb_num(m-1,n)+comb_num(m-1,n-1);
+}

@@ -1,0 +1,1943 @@
+{
+    "_nodetype": "FileAST",
+    "coord": null,
+    "ext": [
+        {
+            "_nodetype": "Decl",
+            "bitsize": null,
+            "coord": "code/4test.c:1:5",
+            "funcspec": [],
+            "init": null,
+            "name": "x",
+            "quals": [],
+            "storage": [],
+            "type": {
+                "_nodetype": "ArrayDecl",
+                "coord": "code/4test.c:1:5",
+                "dim": {
+                    "_nodetype": "Constant",
+                    "coord": "code/4test.c:1:7",
+                    "type": "int",
+                    "value": "100"
+                },
+                "dim_quals": [],
+                "type": {
+                    "_nodetype": "TypeDecl",
+                    "coord": "code/4test.c:1:5",
+                    "declname": "x",
+                    "quals": [],
+                    "type": {
+                        "_nodetype": "IdentifierType",
+                        "coord": "code/4test.c:1:1",
+                        "names": [
+                            "int"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "_nodetype": "Decl",
+            "bitsize": null,
+            "coord": "code/4test.c:1:12",
+            "funcspec": [],
+            "init": null,
+            "name": "y",
+            "quals": [],
+            "storage": [],
+            "type": {
+                "_nodetype": "ArrayDecl",
+                "coord": "code/4test.c:1:12",
+                "dim": {
+                    "_nodetype": "Constant",
+                    "coord": "code/4test.c:1:14",
+                    "type": "int",
+                    "value": "100"
+                },
+                "dim_quals": [],
+                "type": {
+                    "_nodetype": "TypeDecl",
+                    "coord": "code/4test.c:1:12",
+                    "declname": "y",
+                    "quals": [],
+                    "type": {
+                        "_nodetype": "IdentifierType",
+                        "coord": "code/4test.c:1:1",
+                        "names": [
+                            "int"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:4:9",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "Constant",
+                            "coord": "code/4test.c:4:11",
+                            "type": "int",
+                            "value": "0"
+                        },
+                        "name": "n",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:4:9",
+                            "declname": "n",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:4:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:4:13",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "i",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:4:13",
+                            "declname": "i",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:4:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:5:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:13",
+                                "name": "i"
+                            },
+                            "op": "<=",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:16",
+                                "name": "L"
+                            }
+                        },
+                        "coord": "code/4test.c:5:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:5:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:11",
+                                "name": "r"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:5:18",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:18",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:5:22",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:5:22",
+                                "name": "n"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "BinaryOp",
+                                "coord": "code/4test.c:5:25",
+                                "left": {
+                                    "_nodetype": "BinaryOp",
+                                    "coord": "code/4test.c:5:25",
+                                    "left": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:5:25",
+                                        "name": "n"
+                                    },
+                                    "op": "+",
+                                    "right": {
+                                        "_nodetype": "ArrayRef",
+                                        "coord": "code/4test.c:5:27",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:5:27",
+                                            "name": "x"
+                                        },
+                                        "subscript": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:5:29",
+                                            "name": "i"
+                                        }
+                                    }
+                                },
+                                "op": "%",
+                                "right": {
+                                    "_nodetype": "ID",
+                                    "coord": "code/4test.c:5:33",
+                                    "name": "a"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "code/4test.c:6:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "code/4test.c:6:12",
+                            "name": "n"
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:3:1"
+            },
+            "coord": "code/4test.c:2:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:2:5",
+                "funcspec": [],
+                "init": null,
+                "name": "N",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "code/4test.c:2:11",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:2:11",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "r",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:2:11",
+                                    "declname": "r",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:2:7",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:2:17",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "L",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:2:17",
+                                    "declname": "L",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:2:13",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:2:23",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "x",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "ArrayDecl",
+                                    "coord": "code/4test.c:2:23",
+                                    "dim": {
+                                        "_nodetype": "Constant",
+                                        "coord": "code/4test.c:2:25",
+                                        "type": "int",
+                                        "value": "100"
+                                    },
+                                    "dim_quals": [],
+                                    "type": {
+                                        "_nodetype": "TypeDecl",
+                                        "coord": "code/4test.c:2:23",
+                                        "declname": "x",
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "IdentifierType",
+                                            "coord": "code/4test.c:2:19",
+                                            "names": [
+                                                "int"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:2:34",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "a",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:2:34",
+                                    "declname": "a",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:2:30",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "code/4test.c:2:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:2:5",
+                        "declname": "N",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:2:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:10:9",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "Constant",
+                            "coord": "code/4test.c:10:11",
+                            "type": "int",
+                            "value": "1"
+                        },
+                        "name": "n",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:10:9",
+                            "declname": "n",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:10:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:10:13",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "i",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:10:13",
+                            "declname": "i",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:10:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:11:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:13",
+                                "name": "i"
+                            },
+                            "op": "<=",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:16",
+                                "name": "L"
+                            }
+                        },
+                        "coord": "code/4test.c:11:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:11:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:11",
+                                "name": "r"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:11:18",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:18",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:11:22",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:11:22",
+                                "name": "n"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "BinaryOp",
+                                "coord": "code/4test.c:11:25",
+                                "left": {
+                                    "_nodetype": "BinaryOp",
+                                    "coord": "code/4test.c:11:25",
+                                    "left": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:11:25",
+                                        "name": "n"
+                                    },
+                                    "op": "*",
+                                    "right": {
+                                        "_nodetype": "ArrayRef",
+                                        "coord": "code/4test.c:11:27",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:11:27",
+                                            "name": "x"
+                                        },
+                                        "subscript": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:11:29",
+                                            "name": "i"
+                                        }
+                                    }
+                                },
+                                "op": "%",
+                                "right": {
+                                    "_nodetype": "ID",
+                                    "coord": "code/4test.c:11:33",
+                                    "name": "a"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "code/4test.c:12:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "code/4test.c:12:12",
+                            "name": "n"
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:9:1"
+            },
+            "coord": "code/4test.c:8:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:8:5",
+                "funcspec": [],
+                "init": null,
+                "name": "M",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "code/4test.c:8:11",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:8:11",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "r",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:8:11",
+                                    "declname": "r",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:8:7",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:8:17",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "L",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:8:17",
+                                    "declname": "L",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:8:13",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:8:23",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "x",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "ArrayDecl",
+                                    "coord": "code/4test.c:8:23",
+                                    "dim": {
+                                        "_nodetype": "Constant",
+                                        "coord": "code/4test.c:8:25",
+                                        "type": "int",
+                                        "value": "100"
+                                    },
+                                    "dim_quals": [],
+                                    "type": {
+                                        "_nodetype": "TypeDecl",
+                                        "coord": "code/4test.c:8:23",
+                                        "declname": "x",
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "IdentifierType",
+                                            "coord": "code/4test.c:8:19",
+                                            "names": [
+                                                "int"
+                                            ]
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:8:34",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "a",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:8:34",
+                                    "declname": "a",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:8:30",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "code/4test.c:8:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:8:5",
+                        "declname": "M",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:8:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:16:8",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:16:8",
+                                "name": "a"
+                            },
+                            "op": ">",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:16:10",
+                                "name": "b"
+                            }
+                        },
+                        "coord": "code/4test.c:16:5",
+                        "iffalse": {
+                            "_nodetype": "Return",
+                            "coord": "code/4test.c:17:10",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:17:17",
+                                "name": "b"
+                            }
+                        },
+                        "iftrue": {
+                            "_nodetype": "Return",
+                            "coord": "code/4test.c:16:12",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:16:19",
+                                "name": "a"
+                            }
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:15:1"
+            },
+            "coord": "code/4test.c:14:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:14:5",
+                "funcspec": [],
+                "init": null,
+                "name": "max",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "code/4test.c:14:13",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:14:13",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "a",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:14:13",
+                                    "declname": "a",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:14:9",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:14:19",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "b",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:14:19",
+                                    "declname": "b",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:14:15",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "code/4test.c:14:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:14:5",
+                        "declname": "max",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:14:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "If",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:21:8",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:21:8",
+                                "name": "a"
+                            },
+                            "op": "<",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:21:10",
+                                "name": "b"
+                            }
+                        },
+                        "coord": "code/4test.c:21:5",
+                        "iffalse": {
+                            "_nodetype": "Return",
+                            "coord": "code/4test.c:22:10",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:22:17",
+                                "name": "b"
+                            }
+                        },
+                        "iftrue": {
+                            "_nodetype": "Return",
+                            "coord": "code/4test.c:21:12",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:21:19",
+                                "name": "a"
+                            }
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:20:1"
+            },
+            "coord": "code/4test.c:19:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:19:5",
+                "funcspec": [],
+                "init": null,
+                "name": "min",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "code/4test.c:19:13",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:19:13",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "a",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:19:13",
+                                    "declname": "a",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:19:9",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:19:19",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "b",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:19:19",
+                                    "declname": "b",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:19:15",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "code/4test.c:19:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:19:5",
+                        "declname": "min",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:19:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:25:9",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "i",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:25:9",
+                            "declname": "i",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:25:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:25:11",
+                        "funcspec": [],
+                        "init": {
+                            "_nodetype": "Constant",
+                            "coord": "code/4test.c:25:13",
+                            "type": "int",
+                            "value": "0"
+                        },
+                        "name": "n",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:25:11",
+                            "declname": "n",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:25:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:26:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:13",
+                                "name": "i"
+                            },
+                            "op": "<=",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:16",
+                                "name": "q"
+                            }
+                        },
+                        "coord": "code/4test.c:26:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:26:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:11",
+                                "name": "p"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:26:18",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:18",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:26:22",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:26:22",
+                                "name": "n"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "BinaryOp",
+                                "coord": "code/4test.c:26:24",
+                                "left": {
+                                    "_nodetype": "ID",
+                                    "coord": "code/4test.c:26:24",
+                                    "name": "n"
+                                },
+                                "op": "^",
+                                "right": {
+                                    "_nodetype": "ArrayRef",
+                                    "coord": "code/4test.c:26:26",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:26:26",
+                                        "name": "x"
+                                    },
+                                    "subscript": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:26:28",
+                                        "name": "i"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "code/4test.c:27:5",
+                        "expr": {
+                            "_nodetype": "ID",
+                            "coord": "code/4test.c:27:12",
+                            "name": "n"
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:25:1"
+            },
+            "coord": "code/4test.c:24:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:24:5",
+                "funcspec": [],
+                "init": null,
+                "name": "H",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": {
+                        "_nodetype": "ParamList",
+                        "coord": "code/4test.c:24:11",
+                        "params": [
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:24:11",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "p",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:24:11",
+                                    "declname": "p",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:24:7",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:24:17",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "q",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "TypeDecl",
+                                    "coord": "code/4test.c:24:17",
+                                    "declname": "q",
+                                    "quals": [],
+                                    "type": {
+                                        "_nodetype": "IdentifierType",
+                                        "coord": "code/4test.c:24:13",
+                                        "names": [
+                                            "int"
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "_nodetype": "Decl",
+                                "bitsize": null,
+                                "coord": "code/4test.c:24:23",
+                                "funcspec": [],
+                                "init": null,
+                                "name": "x",
+                                "quals": [],
+                                "storage": [],
+                                "type": {
+                                    "_nodetype": "ArrayDecl",
+                                    "coord": "code/4test.c:24:23",
+                                    "dim": {
+                                        "_nodetype": "Constant",
+                                        "coord": "code/4test.c:24:25",
+                                        "type": "int",
+                                        "value": "100"
+                                    },
+                                    "dim_quals": [],
+                                    "type": {
+                                        "_nodetype": "TypeDecl",
+                                        "coord": "code/4test.c:24:23",
+                                        "declname": "x",
+                                        "quals": [],
+                                        "type": {
+                                            "_nodetype": "IdentifierType",
+                                            "coord": "code/4test.c:24:19",
+                                            "names": [
+                                                "int"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "coord": "code/4test.c:24:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:24:5",
+                        "declname": "H",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:24:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        },
+        {
+            "_nodetype": "FuncDef",
+            "body": {
+                "_nodetype": "Compound",
+                "block_items": [
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:9",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "a",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:9",
+                            "declname": "a",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:11",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "b",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:11",
+                            "declname": "b",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:13",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "r",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:13",
+                            "declname": "r",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:15",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "L",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:15",
+                            "declname": "L",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:17",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "i",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:17",
+                            "declname": "i",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:19",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "n",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:19",
+                            "declname": "n",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:21",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "m",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:21",
+                            "declname": "m",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:23",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "p",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:23",
+                            "declname": "p",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Decl",
+                        "bitsize": null,
+                        "coord": "code/4test.c:30:25",
+                        "funcspec": [],
+                        "init": null,
+                        "name": "q",
+                        "quals": [],
+                        "storage": [],
+                        "type": {
+                            "_nodetype": "TypeDecl",
+                            "coord": "code/4test.c:30:25",
+                            "declname": "q",
+                            "quals": [],
+                            "type": {
+                                "_nodetype": "IdentifierType",
+                                "coord": "code/4test.c:30:5",
+                                "names": [
+                                    "int"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "FuncCall",
+                        "args": {
+                            "_nodetype": "ExprList",
+                            "coord": "code/4test.c:31:11",
+                            "exprs": [
+                                {
+                                    "_nodetype": "Constant",
+                                    "coord": "code/4test.c:31:11",
+                                    "type": "string",
+                                    "value": "\"%d%d\""
+                                },
+                                {
+                                    "_nodetype": "UnaryOp",
+                                    "coord": "code/4test.c:31:19",
+                                    "expr": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:31:19",
+                                        "name": "a"
+                                    },
+                                    "op": "&"
+                                },
+                                {
+                                    "_nodetype": "UnaryOp",
+                                    "coord": "code/4test.c:31:22",
+                                    "expr": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:31:22",
+                                        "name": "b"
+                                    },
+                                    "op": "&"
+                                }
+                            ]
+                        },
+                        "coord": "code/4test.c:31:5",
+                        "name": {
+                            "_nodetype": "ID",
+                            "coord": "code/4test.c:31:5",
+                            "name": "scanf"
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:33:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:33:13",
+                                "name": "i"
+                            },
+                            "op": "<",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:33:15",
+                                "name": "a"
+                            }
+                        },
+                        "coord": "code/4test.c:33:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:33:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:33:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "Constant",
+                                "coord": "code/4test.c:33:11",
+                                "type": "int",
+                                "value": "0"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:33:17",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:33:17",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "FuncCall",
+                            "args": {
+                                "_nodetype": "ExprList",
+                                "coord": "code/4test.c:33:27",
+                                "exprs": [
+                                    {
+                                        "_nodetype": "Constant",
+                                        "coord": "code/4test.c:33:27",
+                                        "type": "string",
+                                        "value": "\"%d\""
+                                    },
+                                    {
+                                        "_nodetype": "UnaryOp",
+                                        "coord": "code/4test.c:33:33",
+                                        "expr": {
+                                            "_nodetype": "ArrayRef",
+                                            "coord": "code/4test.c:33:33",
+                                            "name": {
+                                                "_nodetype": "ID",
+                                                "coord": "code/4test.c:33:33",
+                                                "name": "x"
+                                            },
+                                            "subscript": {
+                                                "_nodetype": "ID",
+                                                "coord": "code/4test.c:33:35",
+                                                "name": "i"
+                                            }
+                                        },
+                                        "op": "&"
+                                    }
+                                ]
+                            },
+                            "coord": "code/4test.c:33:21",
+                            "name": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:33:21",
+                                "name": "scanf"
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:35:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:35:13",
+                                "name": "i"
+                            },
+                            "op": "<",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:35:15",
+                                "name": "b"
+                            }
+                        },
+                        "coord": "code/4test.c:35:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:35:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:35:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "Constant",
+                                "coord": "code/4test.c:35:11",
+                                "type": "int",
+                                "value": "0"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:35:17",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:35:17",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "Compound",
+                            "block_items": [
+                                {
+                                    "_nodetype": "FuncCall",
+                                    "args": {
+                                        "_nodetype": "ExprList",
+                                        "coord": "code/4test.c:36:15",
+                                        "exprs": [
+                                            {
+                                                "_nodetype": "Constant",
+                                                "coord": "code/4test.c:36:15",
+                                                "type": "string",
+                                                "value": "\"%d%d\""
+                                            },
+                                            {
+                                                "_nodetype": "UnaryOp",
+                                                "coord": "code/4test.c:36:23",
+                                                "expr": {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:36:23",
+                                                    "name": "r"
+                                                },
+                                                "op": "&"
+                                            },
+                                            {
+                                                "_nodetype": "UnaryOp",
+                                                "coord": "code/4test.c:36:26",
+                                                "expr": {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:36:26",
+                                                    "name": "L"
+                                                },
+                                                "op": "&"
+                                            }
+                                        ]
+                                    },
+                                    "coord": "code/4test.c:36:9",
+                                    "name": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:36:9",
+                                        "name": "scanf"
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Assignment",
+                                    "coord": "code/4test.c:37:9",
+                                    "lvalue": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:37:9",
+                                        "name": "n"
+                                    },
+                                    "op": "=",
+                                    "rvalue": {
+                                        "_nodetype": "FuncCall",
+                                        "args": {
+                                            "_nodetype": "ExprList",
+                                            "coord": "code/4test.c:37:13",
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:13",
+                                                    "name": "r"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:15",
+                                                    "name": "L"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:17",
+                                                    "name": "x"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:19",
+                                                    "name": "a"
+                                                }
+                                            ]
+                                        },
+                                        "coord": "code/4test.c:37:11",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:37:11",
+                                            "name": "N"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Assignment",
+                                    "coord": "code/4test.c:37:22",
+                                    "lvalue": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:37:22",
+                                        "name": "m"
+                                    },
+                                    "op": "=",
+                                    "rvalue": {
+                                        "_nodetype": "FuncCall",
+                                        "args": {
+                                            "_nodetype": "ExprList",
+                                            "coord": "code/4test.c:37:26",
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:26",
+                                                    "name": "r"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:28",
+                                                    "name": "L"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:30",
+                                                    "name": "x"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:37:32",
+                                                    "name": "a"
+                                                }
+                                            ]
+                                        },
+                                        "coord": "code/4test.c:37:24",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:37:24",
+                                            "name": "M"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Assignment",
+                                    "coord": "code/4test.c:38:9",
+                                    "lvalue": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:38:9",
+                                        "name": "p"
+                                    },
+                                    "op": "=",
+                                    "rvalue": {
+                                        "_nodetype": "FuncCall",
+                                        "args": {
+                                            "_nodetype": "ExprList",
+                                            "coord": "code/4test.c:38:15",
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:38:15",
+                                                    "name": "n"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:38:17",
+                                                    "name": "m"
+                                                }
+                                            ]
+                                        },
+                                        "coord": "code/4test.c:38:11",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:38:11",
+                                            "name": "min"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Assignment",
+                                    "coord": "code/4test.c:38:20",
+                                    "lvalue": {
+                                        "_nodetype": "ID",
+                                        "coord": "code/4test.c:38:20",
+                                        "name": "q"
+                                    },
+                                    "op": "=",
+                                    "rvalue": {
+                                        "_nodetype": "FuncCall",
+                                        "args": {
+                                            "_nodetype": "ExprList",
+                                            "coord": "code/4test.c:38:26",
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:38:26",
+                                                    "name": "n"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:38:28",
+                                                    "name": "m"
+                                                }
+                                            ]
+                                        },
+                                        "coord": "code/4test.c:38:22",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:38:22",
+                                            "name": "max"
+                                        }
+                                    }
+                                },
+                                {
+                                    "_nodetype": "Assignment",
+                                    "coord": "code/4test.c:39:9",
+                                    "lvalue": {
+                                        "_nodetype": "ArrayRef",
+                                        "coord": "code/4test.c:39:9",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:39:9",
+                                            "name": "y"
+                                        },
+                                        "subscript": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:39:11",
+                                            "name": "i"
+                                        }
+                                    },
+                                    "op": "=",
+                                    "rvalue": {
+                                        "_nodetype": "FuncCall",
+                                        "args": {
+                                            "_nodetype": "ExprList",
+                                            "coord": "code/4test.c:39:16",
+                                            "exprs": [
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:39:16",
+                                                    "name": "p"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:39:18",
+                                                    "name": "q"
+                                                },
+                                                {
+                                                    "_nodetype": "ID",
+                                                    "coord": "code/4test.c:39:20",
+                                                    "name": "x"
+                                                }
+                                            ]
+                                        },
+                                        "coord": "code/4test.c:39:14",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:39:14",
+                                            "name": "H"
+                                        }
+                                    }
+                                }
+                            ],
+                            "coord": "code/4test.c:36:1"
+                        }
+                    },
+                    {
+                        "_nodetype": "For",
+                        "cond": {
+                            "_nodetype": "BinaryOp",
+                            "coord": "code/4test.c:42:13",
+                            "left": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:42:13",
+                                "name": "i"
+                            },
+                            "op": "<",
+                            "right": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:42:15",
+                                "name": "b"
+                            }
+                        },
+                        "coord": "code/4test.c:42:5",
+                        "init": {
+                            "_nodetype": "Assignment",
+                            "coord": "code/4test.c:42:9",
+                            "lvalue": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:42:9",
+                                "name": "i"
+                            },
+                            "op": "=",
+                            "rvalue": {
+                                "_nodetype": "Constant",
+                                "coord": "code/4test.c:42:11",
+                                "type": "int",
+                                "value": "0"
+                            }
+                        },
+                        "next": {
+                            "_nodetype": "UnaryOp",
+                            "coord": "code/4test.c:42:17",
+                            "expr": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:42:17",
+                                "name": "i"
+                            },
+                            "op": "p++"
+                        },
+                        "stmt": {
+                            "_nodetype": "FuncCall",
+                            "args": {
+                                "_nodetype": "ExprList",
+                                "coord": "code/4test.c:42:28",
+                                "exprs": [
+                                    {
+                                        "_nodetype": "Constant",
+                                        "coord": "code/4test.c:42:28",
+                                        "type": "string",
+                                        "value": "\"%d\\n\""
+                                    },
+                                    {
+                                        "_nodetype": "ArrayRef",
+                                        "coord": "code/4test.c:42:35",
+                                        "name": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:42:35",
+                                            "name": "y"
+                                        },
+                                        "subscript": {
+                                            "_nodetype": "ID",
+                                            "coord": "code/4test.c:42:37",
+                                            "name": "i"
+                                        }
+                                    }
+                                ]
+                            },
+                            "coord": "code/4test.c:42:21",
+                            "name": {
+                                "_nodetype": "ID",
+                                "coord": "code/4test.c:42:21",
+                                "name": "printf"
+                            }
+                        }
+                    },
+                    {
+                        "_nodetype": "Return",
+                        "coord": "code/4test.c:43:5",
+                        "expr": {
+                            "_nodetype": "Constant",
+                            "coord": "code/4test.c:43:12",
+                            "type": "int",
+                            "value": "0"
+                        }
+                    }
+                ],
+                "coord": "code/4test.c:30:1"
+            },
+            "coord": "code/4test.c:29:5",
+            "decl": {
+                "_nodetype": "Decl",
+                "bitsize": null,
+                "coord": "code/4test.c:29:5",
+                "funcspec": [],
+                "init": null,
+                "name": "main",
+                "quals": [],
+                "storage": [],
+                "type": {
+                    "_nodetype": "FuncDecl",
+                    "args": null,
+                    "coord": "code/4test.c:29:5",
+                    "type": {
+                        "_nodetype": "TypeDecl",
+                        "coord": "code/4test.c:29:5",
+                        "declname": "main",
+                        "quals": [],
+                        "type": {
+                            "_nodetype": "IdentifierType",
+                            "coord": "code/4test.c:29:1",
+                            "names": [
+                                "int"
+                            ]
+                        }
+                    }
+                }
+            },
+            "param_decls": null
+        }
+    ]
+}
