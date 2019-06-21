@@ -1,19 +1,15 @@
-int huisu(int n,int m)
-{
-	if(n==m)
-	return 1;
-	if(n==1)
-	return m;
-	int i,j,k,l,sum=0;
-	for(i=0;i<=m-n;i++)
-	sum+=huisu(n-1,m-1-i);
-	return sum;
-}
+long long t[100005]={0};
 int main()
 {
-	int n,m,sum;
-	scanf("%d%d",&m,&n);
-	printf("%d\n",huisu(n,m));
-	
-return 0;
+    long long n,x,m,j=0,l=100000,p;
+    scanf("%lld",&n);
+    for(x=1;x<=n;x++){
+        scanf("%lld",&p);t[p]++;}
+    scanf("%lld",&m);
+        for(l=100000;l>=1;l--)
+        {
+            if(t[l]>0) j++;
+            if(j==m) {printf("%lld %lld",l,t[l]);break;}
+        }
+    return 0;
 }

@@ -2,8 +2,9 @@ from zss import simple_distance, Node
 import json
 from cparser import *
 import sys
+from tqdm import trange, tqdm
 
-url = "https://sc.ftqq.com/SCU47715T1085ec82936ebfe2723aaa3095bb53505ca315d2865a0.send"
+#url = "https://sc.ftqq.com/SCU47715T1085ec82936ebfe2723aaa3095bb53505ca315d2865a0.send"
 
 def file_to_json(path):
     test_path = "test_code/" + path[6:-2] + "test.c"
@@ -55,6 +56,7 @@ def dfs_search(n_node):
         return None
 
 if __name__ == "__main__":
+    '''
     path = "test1.c" # if using dataset, set path = "code/4.c"
     path2 = "test2.c"
     min_ID = sys.maxsize
@@ -64,7 +66,11 @@ if __name__ == "__main__":
     distance = simple_distance(A,B)
     print(distance)
     '''
-    for i in range(1, 3542):
+    path = "code/4.c"
+    A = dfs_search(file_to_json(path))
+    min_ID = sys.maxsize
+    min_score = sys.maxsize
+    for i in trange(1, 3542):
         if i == 4:
             continue
         path2 = "code/" + str(i) + ".c"
@@ -80,7 +86,7 @@ if __name__ == "__main__":
             continue
     #distance = simple_distance(A, B)
     print("ID:{} min_score:{}".format(str(min_ID), str(min_score)))
-    '''
+    
 
 
 

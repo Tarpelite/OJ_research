@@ -1,13 +1,12 @@
-int ans(int m,int n)
-{if(n==1)
-return m;
-if(n==m)
-return 1;
-return ans(m-1,n)+ans(m-1,n-1);
+int C(int n,int m)
+{
+if(m==0||m==n||n==0)return 1;
+else return C(n-1,m-1)+C(n-1,m);
 }
 int main()
-{int m,n;
-scanf("%d%d",&m,&n);
-printf("%d",ans(m,n));
+{
+int m,n;
+scanf("%d%d",&n,&m);
+printf("%d\n",C(n,m));
 return 0;
 }

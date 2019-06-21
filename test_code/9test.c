@@ -1,23 +1,29 @@
+
 int main(){
-    int n;
+    int a[100000]={},n,t,m,l;
+    int i=0,j=0;
     scanf("%d",&n);
-    int prime(int p){
-        for (int i=2;i<=p;i++){
-            if(i==p){
-                return 1;
-                break;
-            }
-            else if (p%i==0){
-                return 0;
-                break;
-            }
-        }
+    while(i<n){
+        scanf("%d",&m);
+        a[m]++;
+        i++;
     }
-    for (int i=n+1;i<=200000;i++){
-        if (prime(i)){
-            printf("%d",i);
-            break;
+    i=0;
+    l=0;
+    while(i<100000){
+        if(a[i]!=0){
+            l=i;
         }
+        i++;
     }
+    scanf("%d",&t);
+    i=l;
+    j=0;
+    while(i>0 && j<t){
+        if(a[i]>0)
+            j++;
+        i--;
+    }
+    printf("%d %d",i+1,a[i+1]);
     return 0;
 }

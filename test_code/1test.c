@@ -1,50 +1,39 @@
-int max(int a, int b)
-{
-	return a > b ? a : b;
-}
-int min(int a, int b)
-{
-	return a < b ? a : b;
-}
-int N(int l, int r, int a[], int n){
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans += a[i];
-	}
-	return ans % n;	
-}
-int M(int l, int r, int a[], int n){
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans *= a[i];
-		ans %= n;
-	}
-	return ans % n;	
-}
-int H(int l, int r, int a[])
-{
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans ^= a[i];
-	}
-	return ans;
-}
-int main()
-{
-	int n, K, a[101];
-	scanf("%d %d", &n, &K);
-	int i;
-	for(i = 0; i < n; i++)
-	{
-		scanf("%d", &a[i]);
-	}
-	while(K--){
-		int l, r;
-		scanf("%d %d", &l, &r);
-		printf("%d\n", H(min(N(l,r,a,n),M(l,r,a,n)),max(N(l,r,a,n),M(l,r,a,n)),a));
+int main(){
+	
+	int n,k,l,r;
+	int N=0,M=1,H;
+	int max=0,min=0;
+	int a[1000];
+	int t,b,p;
+	
+	scanf("%d %d",&n,&k);
+	for(t=0;t<n;t++) scanf("%d",&a[t]);
+	for(b=0;b<k;b++) {
+		scanf("%d %d",&l,&r);
+		for(t=l;t<=r;t++){
+			N=N+a[t];
+			M=M*a[t]%n;  
+		}
+		N=N%n;
+		M=M%n;	
+		
+		if(M>N){
+			max=M;
+			min=N;
+		}else if(M<N){
+			max=N;
+			min=M;
+		}
+		if(M==N){
+			printf("%d\n",a[M]);
+		}else { 
+		        H=a[max];
+				for(p=max-1;p>=min;p--){
+				H=(int)H^a[p];
+				}
+				printf("%d\n",H); 
+		}
+		M=1;N=0;
 	}
 	
 	return 0;

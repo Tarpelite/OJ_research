@@ -1,26 +1,19 @@
-
-int s[233333];
-int main()
-{
-	int n,m,N,k,a;
-	scanf("%d\n",&n);
-	
-	for(int i=0; i<n; i++)
-	{
-		scanf("%d",&m);
-		s[m]++;
-	}
-	scanf("%d",&k);
-	for (int i=100000;k>0;i--){
-		if (s[i]!=0) 
-			k--;
-		if (k==0)
-		{
-			N=s[i];
-			a=i;
-		}
-	}
-
-	printf("%d %d",a,N);
-	return 0;
+ #include <stdlib.h>
+ int main()
+ { 
+int a,i,j,k;
+ scanf("%d",&a); 
+i=a; j=0;
+ for(k=a+1;;k++){ 
+j=0; 
+for(i=2;i<k;i++){
+ if(k%i==0){ j=j+1;
+ } 
+}
+ if(j==0){
+ printf("%d",k); 
+break;
+ }
+ } 
+return 0; 
 }

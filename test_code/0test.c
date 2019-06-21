@@ -1,51 +1,34 @@
-int max(int a, int b)
+
+long long pailie(int a,int b)
 {
-	return a > b ? a : b;
+ int i;
+ long long int sum=1;
+
+b=a-b;
+
+ sum*=i;
+
+ for(i=1;i<=a-b;i++)
+ sum/=i; 
+
+return sum;
 }
-int min(int a, int b)
-{
-	return a < b ? a : b;
-}
-int N(int l, int r, int a[], int n){
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans += a[i];
-	}
-	return ans % n;	
-}
-int M(int l, int r, int a[], int n){
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans *= a[i];
-		ans %= n;
-	}
-	return ans % n;	
-}
-int H(int l, int r, int a[])
-{
-	int i, ans = a[l];
-	for(i = l + 1; i <= r; i++)
-	{
-		ans ^= a[i];
-	}
-	return ans;
-}
-int main()
-{
-	int n, K, a[101];
-	scanf("%d %d", &n, &K);
-	int i;
-	for(i = 0; i < n; i++)
-	{
-		scanf("%d", &a[i]);
-	}
-	while(K--){
-		int l, r;
-		scanf("%d %d", &l, &r);
-		printf("%d\n", H(min(N(l,r,a,n),M(l,r,a,n)),max(N(l,r,a,n),M(l,r,a,n)),a));
-	}
+
+
+
+
+
+int main() {
+	int m,n;
+	long long result;
+	scanf("%d %d",&m,&n);
+	
+	
+	result = pailie(m,n);
+	printf("%lld",result);
+
+	
+	
 	
 	return 0;
 }

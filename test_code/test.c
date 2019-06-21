@@ -1,25 +1,27 @@
-long long time1(int x);
 
 int main()
 {
-	int m,n,o;
-	long long c;
-	scanf("%d%d",&m,&n);
-	o=m-n;
-	c=time1(m)/(time1(n)*time1(o));
-	printf("%d",c);
-	return 0;
-}
-long long time1(int x)
+    int num,K,a[20000]={0},i,N=0,M=1,H,l,r;
+    scanf("%d%d",&num,&K);
+    for(i=0;i<num;i++)
+        scanf("%d",&a[i]);
+    while(K--)
 {
-	int i=x;
-	long long sum=1;
-    while(i>0)
+    N=0,M=1;
+    scanf("%d%d",&l,&r);
+    for(i=l;i<=r;i++)
     {
-        sum = sum*x;
-        x--;
-        i--;
+        N+=a[i]%num;
+        N%=num;
+        M*=a[i]%num;
+        M%=num;
     }
-	return sum;
+    l=min(N,M),r=max(N,M);
+    H=a[l];
+    for(i=l+1;i<=r;i++)
+      H=H^a[i];
+    printf("%d\n",H);
+    }
+    
+    return 0;
 }
-
